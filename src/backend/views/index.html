@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tsukimi | Дизайнер и Backend-разработчик</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            dark: '#0F0F15',
+            darker: '#09090E',
+            primary: '#6D28D9',
+            secondary: '#1E1E2E',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['Fira Code', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../public/css/styles.css">
+</head>
+<body class="font-sans">
+<!-- Polygon Background Elements -->
+<div class="polygon-bg">
+  <div class="polygon polygon-1"></div>
+  <div class="polygon polygon-2"></div>
+  <div class="polygon polygon-3"></div>
+</div>
+
+<!-- Header -->
+<header class="relative overflow-hidden bg-darker">
+  <div class="container mx-auto px-6 py-12">
+    <nav class="flex items-center justify-between">
+      <div class="text-2xl font-bold font-mono">Tsukimi<span class="text-primary">.</span></div>
+      <div class="hidden md:flex space-x-8">
+        <a href="#about" class="nav-link">Обо мне</a>
+        <a href="#services" class="nav-link">Услуги</a>
+        <a href="#works" class="nav-link">Работы</a>
+        <a href="#contact" class="nav-link">Контакты</a>
+      </div>
+      <button class="md:hidden focus:outline-none">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </nav>
+    <div class="mt-20 md:mt-32 text-center relative z-10">
+      <div class="code-block max-w-md mx-auto mb-8 text-left">
+        <span class="text-gray-400">// Приветствие</span><br>
+        <span class="text-primary">console</span>.<span class="text-yellow-300">log</span>(<span class="text-green-300">"Привет, мир! 👋"</span>);
+      </div>
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">
+        <span class="typewriter glow-text">Tsukimi</span>
+      </h1>
+      <p class="text-xl md:text-2xl max-w-2xl mx-auto text-gray-300">
+        Дизайнер <span class="text-primary">|</span> Backend-разработчик <span class="text-primary">|</span> Делаю интернет менее страшным местом
+      </p>
+      <a href="#contact" class="mt-8 inline-block bg-primary text-white px-8 py-3 rounded font-semibold hover:bg-opacity-90 transition duration-300 glow-border">
+        Написать мне
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="py-20 relative bg-dark">
+  <div class="container mx-auto px-6">
+    <div class="flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+        <div class="relative">
+          <div class="absolute -inset-2 bg-primary opacity-20 rounded-lg blur"></div>
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80"
+               alt="Tsukimi"
+               class="relative rounded-lg w-full h-auto border border-secondary">
+        </div>
+      </div>
+      <div class="md:w-1/2">
+        <h2 class="text-3xl font-bold mb-6">Обо мне</h2>
+        <p class="text-lg mb-6 text-gray-300">
+          Вы наверняка видели мои работы — они повсюду, как мемы в пабликах.
+          Но если вдруг пропустили, то вот вам официальное уведомление: перед вами
+          дизайнер, backend-разработчик и просто человек, который делает интернет
+          менее страшным местом.
+        </p>
+        <p class="text-lg mb-6 text-gray-300">
+          Чиловость: Подтверждена сертификатом "100% не робот" (на самом деле нет).
+        </p>
+        <div class="flex flex-wrap gap-3">
+          <div class="bg-secondary text-primary px-4 py-2 rounded font-mono text-sm font-medium border border-gray-800">
+            { Дизайн }
+          </div>
+          <div class="bg-secondary text-blue-400 px-4 py-2 rounded font-mono text-sm font-medium border border-gray-800">
+            { Backend }
+          </div>
+          <div class="bg-secondary text-pink-400 px-4 py-2 rounded font-mono text-sm font-medium border border-gray-800">
+            { Чиловость }
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="py-20 relative bg-darker">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-16">Чем занимаюсь?</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="tech-card p-8 rounded-lg">
+        <div class="text-primary mb-4">
+          <i class="fas fa-paint-brush text-4xl"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-4">Дизайн</h3>
+        <p class="text-gray-400">
+          Красота — моя вторая кнопка Ctrl+S. Создаю интерфейсы, которые не только
+          красивы, но и интуитивно понятны пользователям.
+        </p>
+      </div>
+      <div class="tech-card p-8 rounded-lg">
+        <div class="text-blue-400 mb-4">
+          <i class="fas fa-code text-4xl"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-4">Backend</h3>
+        <p class="text-gray-400">
+          Пишу код, который работает так тихо, будто боится моего код-ревью.
+          Надежные и масштабируемые решения для вашего бизнеса.
+        </p>
+      </div>
+      <div class="tech-card p-8 rounded-lg">
+        <div class="text-pink-400 mb-4">
+          <i class="fas fa-heart text-4xl"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-4">Подход</h3>
+        <p class="text-gray-400">
+          Делаю сложное — простым, а скучное — стильным. Умею объяснять клиентам,
+          что «это не баг, это фича» с невозмутимым лицом.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Works Section -->
+<section id="works" class="py-20 relative bg-dark">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-16">Мои работы</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Work 1 -->
+      <div class="tech-card rounded-lg overflow-hidden">
+        <div class="relative">
+          <div class="absolute inset-0 bg-primary opacity-0 hover:opacity-20 transition duration-300 z-10"></div>
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+               alt="Проект 1"
+               class="w-full h-48 object-cover">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Дизайн интерфейса</h3>
+          <p class="text-gray-400 mb-4">
+            Современный и удобный интерфейс для мобильного приложения.
+          </p>
+          <a href="#" class="text-primary font-medium hover:underline inline-flex items-center">
+            Подробнее <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Work 2 -->
+      <div class="tech-card rounded-lg overflow-hidden">
+        <div class="relative">
+          <div class="absolute inset-0 bg-primary opacity-0 hover:opacity-20 transition duration-300 z-10"></div>
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+               alt="Проект 2"
+               class="w-full h-48 object-cover">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Backend система</h3>
+          <p class="text-gray-400 mb-4">
+            Высоконагруженный бэкенд для платформы электронной коммерции.
+          </p>
+          <a href="#" class="text-primary font-medium hover:underline inline-flex items-center">
+            Подробнее <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Work 3 -->
+      <div class="tech-card rounded-lg overflow-hidden">
+        <div class="relative">
+          <div class="absolute inset-0 bg-primary opacity-0 hover:opacity-20 transition duration-300 z-10"></div>
+          <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80"
+               alt="Проект 3"
+               class="w-full h-48 object-cover">
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Полный цикл разработки</h3>
+          <p class="text-gray-400 mb-4">
+            От идеи до реализации: дизайн и разработка веб-приложения.
+          </p>
+          <a href="#" class="text-primary font-medium hover:underline inline-flex items-center">
+            Подробнее <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-12">
+      <a href="#" class="inline-block border-2 border-primary text-primary px-8 py-3 rounded font-semibold hover:bg-primary hover:bg-opacity-10 transition duration-300">
+        Посмотреть все работы
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonial Section -->
+<section class="py-20 relative bg-darker">
+  <div class="container mx-auto px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="code-block max-w-2xl mx-auto mb-8">
+        <span class="text-gray-400">// Обещание</span><br>
+        <span class="text-yellow-300">if</span> (<span class="text-blue-300">deadline</span>.<span class="text-purple-300">isClose</span>()) {<br>
+        &nbsp;&nbsp;<span class="text-primary">me</span>.<span class="text-purple-300">doMagic</span>();<br>
+        }
+      </div>
+      <p class="text-xl md:text-2xl mb-8 text-gray-300">
+        Готов на подвиги вроде «сделать всё к дедлайну» и «починить то, что сломалось в 3:00».
+        Если вам нужен человек, который не просто пишет код и рисует интерфейсы, а делает это с кайфом, — welcome!
+      </p>
+      <div class="flex items-center justify-center">
+        <div class="text-left">
+          <p class="font-bold">Tsukimi</p>
+          <p class="text-primary">Дизайнер и Backend-разработчик</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 relative bg-dark">
+  <div class="container mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-16">Давайте знакомиться ближе!</h2>
+    <div class="max-w-2xl mx-auto tech-card rounded-lg overflow-hidden p-8">
+      <form id="contactForm">
+        <div class="mb-4">
+          <label for="name" class="block text-gray-300 mb-2 font-mono">$ name</label>
+          <input type="text" id="name" name="name" required
+                 class="w-full px-4 py-2 bg-secondary border border-gray-800 rounded focus:outline-none focus:ring-1 focus:ring-primary text-white">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-300 mb-2 font-mono">$ email</label>
+          <input type="email" id="email" name="email" required
+                 class="w-full px-4 py-2 bg-secondary border border-gray-800 rounded focus:outline-none focus:ring-1 focus:ring-primary text-white">
+        </div>
+        <div class="mb-6">
+          <label for="message" class="block text-gray-300 mb-2 font-mono">$ message</label>
+          <textarea id="message" name="message" rows="4" required
+                    class="w-full px-4 py-2 bg-secondary border border-gray-800 rounded focus:outline-none focus:ring-1 focus:ring-primary text-white"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-primary text-white px-6 py-3 rounded font-semibold hover:bg-opacity-90 transition duration-300 glow-border">
+          Отправить сообщение
+        </button>
+      </form>
+      <div id="formMessage" class="mt-4 text-center hidden"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-darker text-gray-400 py-12 border-t border-gray-800">
+  <div class="container mx-auto px-6">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+      <div class="mb-6 md:mb-0">
+        <div class="text-2xl font-bold font-mono mb-2">Tsukimi<span class="text-primary">.</span></div>
+        <p class="text-sm">Делаю интернет менее страшным местом</p>
+      </div>
+      <div class="flex flex-col md:flex-row md:space-x-12 space-y-4 md:space-y-0">
+        <div>
+          <h4 class="text-lg font-semibold mb-4 text-white">Навигация</h4>
+          <ul class="space-y-2">
+            <li><a href="#about" class="hover:text-white transition duration-300">Обо мне</a></li>
+            <li><a href="#services" class="hover:text-white transition duration-300">Услуги</a></li>
+            <li><a href="#works" class="hover:text-white transition duration-300">Работы</a></li>
+            <li><a href="#contact" class="hover:text-white transition duration-300">Контакты</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4 text-white">Контакты</h4>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <i class="fas fa-envelope mr-2"></i>
+              <span>tsuki.mi@bk.ru</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-phone mr-2"></i>
+              <span>+7 (916) 518-09-00</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-lg font-semibold mb-4 text-white">Соцсети</h4>
+          <div class="flex space-x-4">
+            <a href="#" class="hover:text-white transition duration-300">
+              <i class="fab fa-telegram text-xl"></i>
+            </a>
+            <a href="#" class="hover:text-white transition duration-300">
+              <i class="fab fa-github text-xl"></i>
+            </a>
+            <a href="#" class="hover:text-white transition duration-300">
+              <i class="fab fa-behance text-xl"></i>
+            </a>
+            <a href="#" class="hover:text-white transition duration-300">
+              <i class="fab fa-dribbble text-xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
